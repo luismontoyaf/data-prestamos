@@ -1,0 +1,18 @@
+.js-focus-visible{
+  visibility: hidden;
+}
+
+.container {
+  width: 100%;
+}
+
+.container .image {
+  /* Escalamiento proporcional */
+  width: 100%;
+  height: auto;
+
+  /* Posicionamiento */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
