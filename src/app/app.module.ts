@@ -7,12 +7,16 @@ import { HomeComponent } from './pages/home/home.component';
 import { SidenavComponent } from './pages/sidenav/sidenav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarMenuModule } from 'angular-sidebar-menu';
+import { LoginComponent } from './pages/auth/components/login/login.component';
+import { ResetpasswordComponent } from './pages/auth/components/resetpassword/resetpassword.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SidenavComponent,
+    LoginComponent,
+    ResetpasswordComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +24,10 @@ import { SidebarMenuModule } from 'angular-sidebar-menu';
     BrowserAnimationsModule,
     SidebarMenuModule
   ],
+  /*exports: [
+    LoginComponent,
+    ResetpasswordComponent
+  ],*/
   providers: [],
   bootstrap: [AppComponent]
 })
