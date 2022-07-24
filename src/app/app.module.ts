@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,7 +18,7 @@ import { SidebarMenuModule } from 'angular-sidebar-menu';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SidebarMenuModule
+    SidebarMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

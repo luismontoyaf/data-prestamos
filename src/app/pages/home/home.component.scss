@@ -3,16 +3,16 @@
 }
 
 .container {
-  width: 100%;
+  width: 80%;
+  left: 20%;
 }
 
 .container .image {
   /* Escalamiento proporcional */
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 
   /* Posicionamiento */
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  left: 20%;
 }

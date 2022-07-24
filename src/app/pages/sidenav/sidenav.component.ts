@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,37 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
-  showFiller = false;
-  funcionalidades: any[] = []
-  ngOnInit(): void {
-  this.funcionalidades = [
-    {
-      name: 'Ingresar Usuario'
-    },
-    {
-      name: 'Consultar Clientes'
-    },
-    {
-      name: 'Generar Reporte Diario'
-    },
-    {
-      name: 'Ingresar Pago por Cliente'
-    },
-    {
-      name: 'Reporte Utilidad Mensual'
-    }
-  ];
+  constructor(){
+
   }
 
-  datosMenu=[{
-    'titulo':'GOOGLE',
-    'icon':'fas fa-clock',
-    'url':'https://www.google.com/'
-   },
-   {
-     'titulo':'bootstrap',
-     'icon':'fas fa-clock',
-     'url':'https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp'
-    }];
+  ngOnInit(): void {
+  }
+
+  //@ViewChild("mySidebar", { static: true }) input: ElementRef ;
+
+  openNav(){
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+ closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
 
 }
