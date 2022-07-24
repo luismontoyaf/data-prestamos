@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +22,7 @@ import { ResetpasswordComponent } from './pages/auth/components/resetpassword/re
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SidebarMenuModule
+    SidebarMenuModule,
   ],
   /*exports: [
     LoginComponent,
