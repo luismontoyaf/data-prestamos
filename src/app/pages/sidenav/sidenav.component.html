@@ -1,25 +1,23 @@
-<div class="container mt-3" id="container">
-  <h2>Menú</h2>
-  <p>Seleccione alguna de las funcionalidades disponibles</p>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Consultar clientes</a>
-    </li>
-    <hr>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Consultar prestamos</a>
-    </li>
-    <hr>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Agregar nuevo cliente</a>
-    </li>
-    <hr>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Agregar nuevo prestamo</a>
-    </li>
-    <hr>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Agregar administrador(Proximamente)</a>
-    </li>
-  </ul>
+<div class="menu-container">
+  <mat-nav-list>
+    <div class="logo py-4">
+      <img src="./assets/logo.svg" alt="Company Logo" />
+    </div>
+    <mat-divider></mat-divider>
+    <h2 matSubheader class="mt-2">APPLICATIONS</h2>
+
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
+      <mat-icon>home</mat-icon> Home
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
+      <mat-icon>dashboard</mat-icon> Dashboard
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/accountBalance">
+      <mat-icon>account_balance</mat-icon> Consultar Prestamos
+    </a>
+    <a mat-list-item> <mat-icon>edit</mat-icon> Link 3 </a>
+    <a mat-list-item> <mat-icon>edit</mat-icon> Link 4 </a>
+    <a mat-list-item> <mat-icon>edit</mat-icon> Link 5 </a>
+    <a mat-list-item> <mat-icon>edit</mat-icon> Link 6 </a>
+    </mat-nav-list>
 </div>

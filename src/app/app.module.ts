@@ -9,6 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarMenuModule } from 'angular-sidebar-menu';
 import { LoginComponent } from './pages/auth/components/login/login.component';
 import { ResetpasswordComponent } from './pages/auth/components/resetpassword/resetpassword.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { ResetpasswordComponent } from './pages/auth/components/resetpassword/re
     AppRoutingModule,
     BrowserAnimationsModule,
     SidebarMenuModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatDividerModule,
+    MatListModule,
   ],
   /*exports: [
     LoginComponent,
