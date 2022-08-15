@@ -1,18 +1,19 @@
+import { ResetpasswordComponent } from './modules/auth/pages/resetpassword/resetpassword.component';
+import { LoginComponent } from './modules/auth/pages/login/login.component';
+import { HomeComponent } from './modules/home/pages/home-page/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
-import { SidenavComponent } from './pages/sidenav/sidenav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarMenuModule } from 'angular-sidebar-menu';
-import { LoginComponent } from './pages/auth/components/login/login.component';
-import { ResetpasswordComponent } from './pages/auth/components/resetpassword/resetpassword.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { GeneralInfoService } from './shared/services/general-info.service';
+import { SidenavComponent } from './shared/components/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,13 @@ import { MatListModule } from '@angular/material/list';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    NgbModule,
   ],
   /*exports: [
     LoginComponent,
     ResetpasswordComponent
   ],*/
-  providers: [],
+  providers: [GeneralInfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

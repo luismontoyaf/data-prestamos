@@ -1,4 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { GeneralInfoService } from 'src/app/shared/services/general-info.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,7 +8,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor(){
+  constructor(private service: GeneralInfoService){
 
   }
 

@@ -1,0 +1,33 @@
+<div class="sidenav-container">
+  <app-sidenav></app-sidenav>
+</div>
+<div class="container">
+  <div class="head-container">
+    <img src="" alt="">
+    <p>Data Prestamos</p>
+  </div>
+  <div class="table-client">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Cliente</th>
+      <th scope="col">Cuota</th>
+      <th scope="col">Total Deuda</th>
+      <th scope="col">Estado</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let country of countries; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>
+        {{ country.name }}
+      </td>
+      <td>{{ country.fee | number }}</td>
+      <td>{{ country.totalDebt | number }}</td>
+      <td>{{ country.state }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>

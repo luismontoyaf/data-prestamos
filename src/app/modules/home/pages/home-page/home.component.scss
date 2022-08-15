@@ -1,7 +1,7 @@
 .container {
-  width: 85%;
+  width: 82%;
   height: 100%;
-  left: 15%;
+  left: 18%;
   background-image: url("../../../assets/images/P.png");
 
   /* Posicionamiento */
@@ -19,4 +19,13 @@
   width: 15%;
   background-color: #f6f6e9;
 }
+
+.table-client{
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: white;
+  border-radius: 10px;
+}
+
 
