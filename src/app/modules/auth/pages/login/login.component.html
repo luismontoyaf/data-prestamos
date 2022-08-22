@@ -1,31 +1,29 @@
-<section id="login" class="mb-5 mt-5">
+<section id="login"><!-- Basic front end for the login page, in here you'll find the section to introduce username and password-->
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
-          <div class="card_login">
-            <div class="card">
-              <div class="card-body text-center">
-                <form >
-                  <h1 class="h3 mb-3 font-weight-normal" >Administrator Login</h1>
-                  <div class="alert alert-danger" role="alert" >
-                    Welcome to the admins login!
-                  </div>
-                  <div class="form-group">
-                    <input  type="email" id="email" name="email" class="form-control" placeholder="Email" required>
-                  </div>
-                  <div class="form-group">
-                    <input  type="password" id="password" name="password" class="form-control" placeholder="Password" required>
-                  </div>
-                  <button type="submit" class="btn btn-lg btn-primary btn-block">Login</button>
-                  <div class="formRegister">
-                    <a routerLink="/user/register" class="form-control login-user">Are you new ?</a>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary" routerLink="/home">Login</button>
-          </div>
-        </div>
+      <div class="header">
+        <h1>Login</h1><br>
+        <img src="../../../../../assets/images/logo-data-prestamos.png" alt="">
+      </div>
+      <div class="main">
+        <form>
+          <span>
+            <mat-icon>person</mat-icon>
+            <input type="text" placeholder="Username">
+          </span><br>
+          <span>
+            <mat-icon>lock</mat-icon>
+            <input type="password" placeholder="Password">
+            <a routerLink="/resetpassword">Forgot password?</a>
+          </span><br>
+        
+          <button>Login <mat-icon>login</mat-icon></button>
+        </form>
       </div>
     </div>
-  </section>
+
+    <!--<div class="backgroundPicture">
+      <img src="../../../../../assets/images/loginbackground.jpg" alt="">
+    </div>
+    dismiss this part!
+  -->
+</section>
