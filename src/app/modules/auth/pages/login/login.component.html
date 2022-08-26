@@ -8,22 +8,24 @@
         <form>
           <span>
             <mat-icon>person</mat-icon>
-            <input type="text" placeholder="Username">
+            <input #loginEmail type="text" placeholder="Username">
           </span><br>
           <span>
             <mat-icon>lock</mat-icon>
-            <input type="password" placeholder="Password">
+            <input #loginPassword type="password" placeholder="Password">
             <a routerLink="/resetpassword">Forgot password?</a>
           </span><br>
         
-          <button>Login <mat-icon>login</mat-icon></button>
+          <button class="gotohome" (click)="loginAction">Login <mat-icon>login</mat-icon></button>
         </form>
       </div>
     </div>
-
+<!-- conectar los input con el botón para mandar información, resivar el submit-->
     <!--<div class="backgroundPicture">
       <img src="../../../../../assets/images/loginbackground.jpg" alt="">
     </div>
     dismiss this part!
   -->
 </section>
+<!--Compare variables with the Array, rute in the way of interpolation. When validation says ok a variable
+will be filled with the routerLink. Make alerts that says resolve in case something is wrong -->

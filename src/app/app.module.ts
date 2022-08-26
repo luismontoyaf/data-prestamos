@@ -2,7 +2,7 @@ import { ResetpasswordComponent } from './modules/auth/pages/resetpassword/reset
 import { LoginComponent } from './modules/auth/pages/login/login.component';
 import { HomeComponent } from './modules/home/pages/home-page/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {  NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
