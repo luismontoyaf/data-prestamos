@@ -1,3 +1,7 @@
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -8,11 +12,16 @@ import { SidenavComponent } from 'src/app/shared/components/sidenav/sidenav.comp
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    SidenavComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatDividerModule,
+    MatListModule,
   ]
 })
 export class HomeModule { }
