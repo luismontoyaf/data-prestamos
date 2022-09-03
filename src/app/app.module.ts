@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarMenuModule } from 'angular-sidebar-menu';
 import { GeneralInfoService } from './shared/services/general-info.service';
+<<<<<<< HEAD
+=======
+
+>>>>>>> cbafd23ec11397dc0f0b9554811e5529aa849e33
 
 @NgModule({
   declarations: [

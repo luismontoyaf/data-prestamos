@@ -1,0 +1,30 @@
+.container {
+  width: 80%;
+  height: 100%;
+  left: 20%;
+  top: 0px;
+  background-color: #158075;
+  /* Posicionamiento */
+  position: absolute;
+  overflow-y: scroll;
+  }
+  
+  .sidenav-container {
+    width: 20%;
+    background-color: #f6f6e9;
+    position: fixed;
+  }
+  
+  .table-client{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .table-client p{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 23px;
+  }
